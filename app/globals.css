@@ -3,6 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --light-gray: #f2f2f2;
+  --softgreen: #e1f9dc;
+  --deepgreen: #178d00;
+  --darkgray: #5a5a5a;
+  --purewhite: #ffffff;
 }
 
 @theme inline {
@@ -14,13 +19,56 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    /* --background: #0a0a0a; */
     --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  /* background: var(--background); */
+  /* color: var(--foreground); */
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes borderLight {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 400% 0%;
+  }
+}
+
+.border-glow {
+  position: relative;
+  z-index: 0;
+}
+
+.border-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: linear-gradient(90deg, #e1f9dc, #e1f9dc, #e1f9dc, transparent, #e1f9dc);
+  background-size: 400%;
+  border-radius: 1rem;
+  z-index: -1;
+  animation: borderLight 4s linear infinite;
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
+@keyframes gentle-tilt {
+  0% {
+    transform: rotate(-1.5deg);
+  }
+  50% {
+    transform: rotate(1.5deg);
+  }
+  100% {
+    transform: rotate(-1.5deg);
+  }
 }
