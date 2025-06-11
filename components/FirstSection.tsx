@@ -46,16 +46,19 @@ export default function FirstSection() {
           }}
         >
           {/* Title */}
-          <motion.div
-            className="font-bold text-2xl md:text-5xl pt-8 leading-tight"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            Hey, I'm <span>Ezebili Chibunna</span>.
-            <br />
-            Software Engineer
-          </motion.div>
+         {/* Title */}
+<motion.div
+  className="font-bold text-2xl md:text-5xl pt-8 leading-tight"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.3 }}
+>
+  {"Hey, I'm "}
+  <span>Ezebili Chibunna</span>
+  .
+  <br />
+  Software Engineer
+</motion.div>
 
           {/* Subtitle */}
           <motion.div

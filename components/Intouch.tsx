@@ -1,13 +1,12 @@
 // pages/contact.js
 
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
-
 export default function Intouch() {
   return (
     <div className="md:pt-32 pt-20">
       <h1 className="md:text-4xl text-xl font-bold text-center mb-6 text-gray-800">Get in Touch</h1>
       <p className="text-center text-gray-600 max-w-lg mx-auto mb-8 ">
-      I'm always interested in exploring new opportunities, collaborating, or exchanging ideas with like-minded individuals. Feel free to book a call or email me if you'd like to see my portfolio deck or to discuss a potential project.
+      {"I'm always interested in exploring new opportunities, collaborating, or exchanging ideas with like-minded individuals. Feel free to book a call or email me if you'd like to see my portfolio deck or to discuss a potential project."}
+        
       </p>
 
       {/* Contact Form */}

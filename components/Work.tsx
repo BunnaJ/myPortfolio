@@ -48,8 +48,8 @@ export default function ProjectSection() {
     <div className="pt-16">
       {/* Section Title */}
       <div className="flex items-center justify-center">
-        <h1 className="md:text-4xl text-xl font-bold pb-5 border-b-2 border-b-emerald-300 mb-5">
-          Here's What I've Been Up To.
+        <h1 className="md:text-4xl text-xl font-bold pb-5 border-b-2 border-b-[var(--softgreen)] mb-5">
+          {"Here's What I've Been Up To."}
         </h1>
       </div>
 
@@ -87,7 +87,7 @@ export default function ProjectSection() {
                 >
                   {/* Your content inside the div here */}
                   <p>View Project</p>
-                    <ChevronRight/>
+                  <ChevronRight />
                 </motion.div>
               </div>
             </Link>
@@ -116,11 +116,15 @@ export default function ProjectSection() {
       <div className="border mt-20 border-b-emerald-300"></div>
 
       {/* Work Experience Section */}
-      <div className="md:pt-40 pt-10 md:text-3xl  text-xl font-semibold">Work Experience</div>
+      <div className="md:pt-40 pt-10 md:text-3xl  text-xl font-semibold">
+        Work Experience
+      </div>
 
       <div className="space-y-9">
         <div className="md:flex items-center justify-between pt-16">
-          <div className="md:font-bold md:text-xl text-[#929292]">2025- present</div>
+          <div className="md:font-bold md:text-xl text-[#929292]">
+            2025- present
+          </div>
           <div className="flex items-center gap-5">
             <div className="font-bold md:text-xl text-[var(--darkgray)]">
               Frontend Developer at
@@ -132,7 +136,9 @@ export default function ProjectSection() {
         </div>
 
         <div className="md:flex items-center justify-between">
-          <div className="md:font-bold md:text-xl text-[#929292]">2024 - present</div>
+          <div className="md:font-bold md:text-xl text-[#929292]">
+            2024 - present
+          </div>
           <div className="flex items-center gap-5">
             <div className="font-bold md:text-xl text-[var(--darkgray)] ">
               Frontend Developer at
@@ -144,7 +150,9 @@ export default function ProjectSection() {
         </div>
 
         <div className="md:flex items-center justify-between">
-          <div className="md:font-bold md:text-xl text-[#929292]">2023- present</div>
+          <div className="md:font-bold md:text-xl text-[#929292]">
+            2023- present
+          </div>
           <div className="flex items-center gap-5">
             <div className="font-bold md:text-xl text-[var(--darkgray)]">
               Frontend Developer at
